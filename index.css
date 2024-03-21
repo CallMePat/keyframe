@@ -1,0 +1,111 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    font-size: 8.5em;
+    text-align: center;
+}
+
+.keyframe {
+    background-color: hsl(0, 100%, 62%);
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+.keyframe1{
+    background-color: hsl(36, 100%, 62%);
+    animation-name: slideRight;
+    animation-duration: 2s; 
+}
+.keyframe2{
+    background-color: hsl(81, 100%, 62%);
+    animation-name: slideUp;
+    animation-duration: 2s; 
+}
+
+.keyframe3{
+    background-color: hsl(119, 100%, 62%);
+    animation-name: slideDown;
+    animation-duration: 2s; 
+}
+.keyframe4{
+    background-color: hsl(185, 100%, 62%);
+    animation-name: rotatex;
+    animation-duration: 2s; 
+}
+
+.keyframe5{
+    background-color: hsl(200, 100%, 62%);
+    animation-name: rotatey;
+    animation-duration: 2s; 
+}
+
+.keyframe6{
+    background-color: hsl(218, 100%, 62%);
+    animation-name: rotatez;
+    animation-duration: 2s; 
+}
+
+.keyframe7{
+    background-color: hsl(239, 100%, 62%);
+    animation-name: glow;
+    animation-duration: 2s; 
+}
+
+.keyframe8{
+    background-color: hsl(261, 100%, 62%);
+    animation-name: shrink;
+    animation-duration: 2s; 
+}
+
+.keyframe9{
+    background-color: hsl(282, 100%, 62%);
+    animation-name: fade;
+    animation-duration: 2s; 
+}
+
+
+@keyframes slideLeft {
+    from{transform: translateX(100px)}
+}
+
+@keyframes slideRight {
+    to{transform: translateX(100px)}
+}
+
+@keyframes slideUp {
+    from{transform: translateY(100px)}
+}
+
+@keyframes slideDown {
+    to{transform: translateY(100px)}
+}
+
+@keyframes rotatex {
+    100%{transform: rotateX(360deg)}
+}
+
+@keyframes rotatey {
+    100%{transform: rotateY(360deg)}
+}
+
+@keyframes rotatez {
+    100%{transform: rotateZ(360deg)}
+}
+
+@keyframes glow {
+    50%{transform: scale(2, 2)}
+}
+
+@keyframes shrink {
+    50%{transform: scale(0.5, 0.5)}
+}
+
+@keyframes fade {
+    50%{opacity: 0}
+}
